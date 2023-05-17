@@ -39,7 +39,7 @@ var password = "";
     characters += lowercaseLetters;
   }
   if(userrequestspecialCharacters) {
-    characters =+ specialCharacters;
+    characters += specialCharacters;
   }
   
   //creating password
