@@ -14,10 +14,10 @@ function generatePassword() {
 var characters = "";
 var passwordLength = 8;
 var password = "";
-  userrequestuppercaseLetters = confirm("Would you like UPPERcase letters? ");
-  userrequestlowercaseLetters = confirm("Would you like lowerCASE letters? ");
-  userrequestspecialCharacters = confirm("Would you like special characters? ");
-  userrequestnumbers = confirm("Would you like numbers? ");
+  userrequestuppercaseLetters = confirm("Would you like UPPERcase letters? Ok for 'yes', Cancel for 'no' ");
+  userrequestlowercaseLetters = confirm("Would you like lowerCASE letters? Ok for 'yes', Cancel for 'no' ");
+  userrequestspecialCharacters = confirm("Would you like special characters? Ok for 'yes', Cancel for 'no' ");
+  userrequestnumbers = confirm("Would you like numbers? Ok for 'yes', Cancel for 'no'");
   passwordLength = prompt("Choose password length of at least 8 characters and no more than 128 characters. ");
 //validating user input
   if(passwordLength < 8 || passwordLength > 128){
