@@ -2,7 +2,7 @@
 var generateBtn = document.querySelector("#generate");
 var passwordText = document.querySelector("#password");
 
-
+//needed info for password when generated
 var uppercaseLetters = "QWERTYUIOPASDFGHJKLZXCVBNM";
 var lowercaseLetters = "qwertyuiopasdfghjklzxcvbnm";
 var numbers = "1234567890";
