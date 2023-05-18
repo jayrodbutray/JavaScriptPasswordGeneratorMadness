@@ -1,7 +1,7 @@
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
 var passwordText = document.querySelector("#password");
-
+console.log(generateBtn);
 //needed info for password when generated
 var uppercaseLetters = "QWERTYUIOPASDFGHJKLZXCVBNM";
 var lowercaseLetters = "qwertyuiopasdfghjklzxcvbnm";
@@ -30,25 +30,29 @@ var password = "";
   //building character string for password generation
   if(userrequestnumbers) {
     characters += numbers;
+    console.log(characters);
   }
   
   if(userrequestuppercaseLetters){
     characters += uppercaseLetters;
+    console.log(characters);
   }
   if(userrequestlowercaseLetters) {
     characters += lowercaseLetters;
+    console.log(characters);
   }
   if(userrequestspecialCharacters) {
     characters += specialCharacters;
+    console.log(characters);
   }
   
   //creating password
   for (var i=0; i< passwordLength; i++){
     var randomNumber = Math.floor(Math.random() * characters.length);
     var character = characters[randomNumber]
-    console.log(characters, randomNumber, character);
+    //console.log(characters, randomNumber, character);
     password += character
-    
+    console.log(password);
   }
 
   return password
