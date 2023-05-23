@@ -20,13 +20,16 @@ var password = "";
   userrequestnumbers = confirm("Would you like numbers? Ok for 'yes', Cancel for 'no'");
   passwordLength = prompt("Choose password length of at least 8 characters and no more than 128 characters. ");
 //validating user input
-  if(passwordLength < 8 || passwordLength > 128){
-    alert("Your password is not between 8 and 128 characters. Please try again.");
+  while(passwordLength < 8 || passwordLength > 128){
+    alert("Your password is not between 8 and 128 characters. Please try again."); 
     var passwordLength = prompt("Choose a password length of at least 8 characters and no more than 128 characters.");
   
-  }else if(lowercaseLetters === false && uppercaseLetters === false && numbers === false && specialCharacters === false){
+  
+  }if(lowercaseLetters === false && uppercaseLetters === false && numbers === false && specialCharacters === false){
     alert("You must choose at least one password criteria.")
+  return;
   }
+  
   //building character string for password generation
   if(userrequestnumbers) {
     characters += numbers;
