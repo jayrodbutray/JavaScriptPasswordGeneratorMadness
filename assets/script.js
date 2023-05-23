@@ -27,7 +27,7 @@ var password = "";
   
   }if(lowercaseLetters === false && uppercaseLetters === false && numbers === false && specialCharacters === false){
     alert("You must choose at least one password criteria.")
-  return;
+  return"";
   }
   
   //building character string for password generation
